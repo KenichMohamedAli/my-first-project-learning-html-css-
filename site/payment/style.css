@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: -6%;
+    font-family: sans-serif;
+} 
+body{
+    min-height: 100vh;
+    background: radial-gradient(#00B7FF,#002448);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+} 
+.div1{
+    color:#8FB2D0;
+    background-color: #004F8F;
+    width: 80%;
+    margin:10px 0px;
+    border-radius: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 25px;
+    width: 60%;
+}
+.left-side h1{
+    font-size: clamp(21px,1.5vw,27px);
+    margin-bottom: 10px;
+}
+.left-side .hr1{
+    border: 1px solid #8FB2D0;
+    margin-bottom: 10px;
+    max-width: 450px;
+}
+.left-side ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.left-side ul li{
+    font-size: clamp(14px,1.5vw,17px);
+    margin-bottom: 10px;
+    position: sticky;
+}
+.left-side ul li i {
+    margin-right: 5px;
+    color: #8FB2D0;
+}
+.right-side{
+    display: flex;
+    justify-self: flex-end;
+    background-image: url(lang.png);
+    min-height: 96%;
+    width: 270px;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: sticky;
+    border-radius: 17px;
+    background-position-x: center;
+    flex-shrink: 0;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px black;
+}
+.div2{
+    background-color: #001428;
+    color: white;
+    width: 300px;
+    height: 250px;
+    border-radius: 23px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    flex-direction: column;
+}
+.div2 h1 {
+    font-size: clamp(20px,1.5vw,27px);
+    margin-bottom: 30px;
+    color: #9ECEFF;
+    align-self: center;
+    margin: 10px 10px;
+    text-align: center;
+}
+.div2 div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 25px;
+}
+.div2 .binance input {
+    margin-right: 10px;
+
+}
+.div2 .baridiMob input {
+    margin-right: 10px;
+}
+.div2 img {
+    display: flex;
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+}
+@media (max-width:750px) {
+    .right-side{
+        display: none;
+    }
+    .left-side{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 25px;
+    width: 100%;
+    }
+    .div1{
+        display: flex;
+        justify-content: center;
+    }
+}
+.continue{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+} 
+.continue a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #1287E7;
+    border-radius: 72px;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: white;
+    margin: 10px 15px;
+    font-size: clamp(20px,1.5vw,23px);
+    box-shadow: 0px 0px 6px rgb(255, 255, 255);
+    cursor: pointer;
+}
+.continue a:hover,
+.continue a:focus{
+    background-color: white;
+    box-shadow: 0px 0px 16px #1287E7;
+    color: #1287E7;
+}

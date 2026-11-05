@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: -6%;
+    font-family: sans-serif;
+}  
+body{
+    min-height: 100vh;
+    background: radial-gradient(#00B7FF,#002448);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.big-div{
+    width: 90%;
+    height: 85vh;
+    background-color: white;
+    border-radius: 101px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.div1{
+    align-self: flex-start;
+    position: sticky;
+    top: 10%;
+    left: 10%;
+    color: #003B75;
+    text-align: center;
+    margin: auto;
+}
+.div1 h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+.div1 p{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.div1 form{
+    margin-top: 60px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+form div {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+form div i{
+    position: absolute;
+    left: 90%;
+    top: 23%;
+    font-size: 20px;
+}
+input {
+    padding: 12px 16px;
+    font-size: 14px;
+    border-radius: 31px;
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    transition: all 0.3s;
+}
+input:focus{
+    border: 2px solid #003B75; 
+    transform: scale(1.04);
+    box-shadow: 0px 1px 1px lightskyblue;
+    background-color: rgba(224, 255, 255, 0.305);
+}
+.password{
+    position: absolute;
+    left: 33%;
+    top: 33px;
+    width: 100%;
+}
+.password a{
+    text-decoration: none;
+    color: #11161b;
+    font-size: 13px;
+}
+form .login {
+    border-radius: 31px;
+    width: 100%;
+    outline: none;
+    background-color: #005DA9;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin-bottom: 12px;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 31px;
+    width: 100%;
+    outline: none;
+    transition: all 0.5s;
+    border-color: transparent;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.login:hover,
+.login:focus{
+    background-color:#003B75;
+    box-shadow: 0px 0px 10px rgb(0, 71, 94);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.pf a:hover{
+    color: #003B75;
+    box-shadow: 0px 1px 1px rgb(173, 216, 230);
+}
+.div1 .pf{
+    font-size: 14px;
+    margin-top: 5px;
+} 
+.pf a{
+    font-weight: 600;
+    text-decoration: none;
+    color: #005DA9;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+.div2{
+    width: 30%;
+    background-image: url(abdou.png);
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    border-radius: 70px;
+    margin: 10px;
+    position: sticky;
+    top: 0;
+    left:0%;
+    background-size: cover;
+} 
+.div2 p{
+    color: white;
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 22px;
+    position: absolute;
+    left: 10%;
+    top: 75%;
+} 
+@media (max-width:700px){
+    .div2{
+        width: 260px;
+        background-image:none;
+        display: none;
+        align-items: none;
+        padding: none;
+        border-radius: none;
+        margin: none;
+        position: none;
+        top: none;
+        left: none;
+    }
+    .div2 p{
+    color: none;
+    font-size: none;
+    font-weight: none;
+    line-height: none;
+    } 
+}
+
+

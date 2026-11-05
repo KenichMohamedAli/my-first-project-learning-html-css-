@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: -6%;
+    font-family: sans-serif;
+}  
+body{
+    min-height: 100vh;
+    background: radial-gradient(#00B7FF,#002448);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
+.big-div{ 
+    width: 85%;
+    min-height: 80vh;
+    background: linear-gradient(#010101 15%,#13467B 70%);
+    border-radius: 53px;
+    margin-top: 20px;
+}
+.title{
+    color: #CAE5FB;
+    margin: 30px 0px 0px 30px;
+}
+.mini-div{
+    color:#C6E5FF;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: auto;
+    margin-top: 20px;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+.div1,.div2,.div3,.div4{
+    background-color: #004F8F  ;
+    border-radius: 11px;
+}
+.div1 div,.div2 div,.div3 div,.div4 div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.div1 .head p,.div2 .head p,.div3 .head p,.div4 .head p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(20px,1.5vw,25px);
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+    background-color: #001220;
+    color: #C6E5FF;
+    margin-right: 10px;
+}
+.div1 h1,.div2 h1,.div3 h1,.div4 h1 {
+    font-size: clamp(20px,1.5vw,25px);
+    margin-left: 4%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.div1 p,.div2 p,.div3 p,.div4 p {
+    font-size: clamp(13px,1.5vw,14px);
+    margin-left: 4%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 2px;
+
+}
+.div1 p span ,.div2 p span ,.div3 div  p span,.div4 p span {
+    font-size: clamp(13px,1.5vw,14px);
+    margin-left: 4%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.div1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 20px;
+}
+.div2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.div3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin-right: 20px;
+}
+.div4{
+    grid-column:2/3;
+    grid-row: 2/3;
+}
+.whatsapp{
+    display: flex;
+}
+.whatsapp i{
+    background-color: #1DDB53;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: clamp(24px,1.5vw,30px);
+    margin-right: 10px;
+}
+.home{
+    color: #004F8F;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.home a{
+    text-decoration: none;
+    color: #004F8F;
+    background-color: #C6E5FF;
+    padding: 6px 15px;
+    border-radius: 61px;
+}
+.home:hover,
+.home:focus{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 50px #010101;
+}
+@media (max-width:800px) {
+    .mini-div{
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: auto;
+        height: 80%;
+    }
+   .div1,.div2,.div3,.div4{
+        background-color: #004F8F ;
+        border-radius: 17px;
+        width: 80%;
+    }
+   .div1 h1,.div2 h1,.div3 h1,.div4 h1 {
+        font-size: clamp(20px,1.5vw,25px);
+        margin-left: 4%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+   .div1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-left: 30px;
+    }
+   .div2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-left: 20px;
+    }
+   .div3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-left: 30px;
+    }
+   .div4{
+        grid-column:2/3;
+        grid-row: 2/3;
+        margin-left: 20px;
+    }
+}
+@media (max-width:700px) {
+    .mini-div{
+        grid-template-columns: 2fr;
+        grid-template-rows: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+   .div1,.div2,.div3,.div4{
+        background-color: #004F8F ;
+        border-radius: 17px;
+        width: 80%;
+        margin-right: 30px;
+    }
+   .div1 h1,.div2 h1,.div3 h1,.div4 h1 {
+        font-size: clamp(20px,1.5vw,25px);
+        margin-left: 4%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+   .div1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+   .div2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+   .div3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+   .div4{
+        grid-column:1/2;
+        grid-row: 4/5;
+    }
+}
